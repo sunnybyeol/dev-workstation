@@ -24,11 +24,11 @@ Github과 Codyssey를 연동하기 위해 만들어진 Repository입니다.
 
 | 항목 | 내용 |
 |---|---|
-| OS | 예: Windows 11 / macOS / Ubuntu |
-| Shell | 예: PowerShell / zsh / bash |
-| Terminal | 예: Windows Terminal / VSCode Terminal |
+| OS | Windows 11 |
+| Shell | PowerShell / zsh / bash |
+| Terminal | Windows Terminal / VSCode Terminal |
 | Docker Version | Docker version 29.9.2, build a82e528 |
-| Git Version | `git --version` 결과 |
+| Git Version | git version 2.56.0.windows.4 |
 
 ### Docker 버전 확인
 
@@ -108,7 +108,42 @@ docker build -t dev-workstation-web:1.0 .
 결과:
 
 ```text
-여기에 본인 빌드 결과 붙여넣기
+[+] Building 6.2s (8/8) FINISHED                                             docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                         0.0s
+ => => transferring dockerfile: 716B                                                         0.0s
+ => [internal] load metadata for docker.io/library/nginx:alpine                              2.0s
+ => [auth] library/nginx:pull token for registry-1.docker.io                                 0.0s
+ => [internal] load .dockerignore                                                            0.0s
+ => => transferring context: 2B                                                              0.0s
+ => [internal] load build context                                                            0.0s
+ => => transferring context: 354B                                                            0.0s
+ => [1/2] FROM docker.io/library/nginx:alpine@sha256:785835ea65db4bba6f021acc0f3be91b0fef76  3.0s
+ => => resolve docker.io/library/nginx:alpine@sha256:785835ea65db4bba6f021acc0f3be91b0fef76  0.0s
+ => => sha256:b9b388a21ecfde6ac80505f23f527146a2129dfb104e79b029bbd00d4cc 20.53MB / 20.53MB  2.5s
+ => => sha256:9b0f7dfe35b2711a17f60dadd6d4035dc0cdee152538cc5c0987029e94679 1.40kB / 1.40kB  0.4s
+ => => sha256:2ec5fb117ffa9a78b15fb6a78745ffc569c8da0aee9f36ace4cd67a44b1fe 1.21kB / 1.21kB  0.6s
+ => => sha256:26185d08a3ec318dd85a6c9f2172e714ec13cececd7f33c533b40b1689f9fedb 404B / 404B   0.6s
+ => => sha256:7cc330898115ce55acccb0cc1e7dd091df4410c8c5f3c540710ee0ac689f5fcb 964B / 964B   0.2s
+ => => sha256:657023555a2a19dc6036468198bb350d2c7feaac7f2d0a3901b4dd3cb25e40c5 629B / 629B   0.2s
+ => => sha256:12b85cff06fd7d383d36a9c96503fe049c9d4bf3dfda5cbb9ffa6ae99b9c0 1.94MB / 1.94MB  0.8s
+ => => sha256:7b229517ed222597277036d94892173207d01a731ab3a88eeb1de2e963a2c 3.85MB / 3.85MB  1.3s
+ => => extracting sha256:7b229517ed222597277036d94892173207d01a731ab3a88eeb1de2e963a2c788    0.2s
+ => => extracting sha256:12b85cff06fd7d383d36a9c96503fe049c9d4bf3dfda5cbb9ffa6ae99b9c07a6    0.2s
+ => => extracting sha256:657023555a2a19dc6036468198bb350d2c7feaac7f2d0a3901b4dd3cb25e40c5    0.0s
+ => => extracting sha256:7cc330898115ce55acccb0cc1e7dd091df4410c8c5f3c540710ee0ac689f5fcb    0.0s
+ => => extracting sha256:26185d08a3ec318dd85a6c9f2172e714ec13cececd7f33c533b40b1689f9fedb    0.0s
+ => => extracting sha256:2ec5fb117ffa9a78b15fb6a78745ffc569c8da0aee9f36ace4cd67a44b1fef79    0.0s
+ => => extracting sha256:9b0f7dfe35b2711a17f60dadd6d4035dc0cdee152538cc5c0987029e94679548    0.0s
+ => => extracting sha256:b9b388a21ecfde6ac80505f23f527146a2129dfb104e79b029bbd00d4cc1a919    0.4s
+ => [2/2] COPY site/ /usr/share/nginx/html/                                                  0.1s
+ => exporting to image                                                                       0.9s
+ => => exporting layers                                                                      0.1s
+ => => exporting manifest sha256:23bb47b0b9903edb2c245537ec19d0de4bd634321c5616a0425ba122c8  0.0s
+ => => exporting config sha256:b142d052a60e923a7ba4278677f46b3a2d3ee3a07c4b25fccbcd729274d8  0.0s
+ => => exporting attestation manifest sha256:41fa0e8307391611e5181daead79986f86f3c4f1774caf  0.0s
+ => => exporting manifest list sha256:ebde0a34a20f6d75fa84f43ec5a794ff24e2d236ca95734ee6d29  0.0s
+ => => naming to docker.io/library/dev-workstation-web:1.0                                   0.0s
+ => => unpacking to docker.io/library/dev-workstation-web:1.0                                0.8s
 ```
 
 ### 이미지 확인
