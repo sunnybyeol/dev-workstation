@@ -27,7 +27,7 @@ Github과 Codyssey를 연동하기 위해 만들어진 Repository입니다.
 | OS | 예: Windows 11 / macOS / Ubuntu |
 | Shell | 예: PowerShell / zsh / bash |
 | Terminal | 예: Windows Terminal / VSCode Terminal |
-| Docker Version | `docker --version` 결과 |
+| Docker Version | Docker version 29.9.2, build a82e528 |
 | Git Version | `git --version` 결과 |
 
 ### Docker 버전 확인
