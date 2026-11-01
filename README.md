@@ -68,8 +68,8 @@ docker info
 | Docker 정보 확인 | ✅ | [docker-info.txt](logs/docker-info.txt) |
 | Dockerfile 작성 | ✅ | [Dockerfile](Dockerfile) |
 | 웹 서버 소스코드 작성 | ✅ | [app/index.html](app/index.html) |
-| 이미지 빌드 | ✅ | docker build 로그 |
-| 컨테이너 실행 | ✅ | docker ps 로그 |
+| 이미지 빌드 | ✅ | [docker-images.txt](logs/docker-images.txt) |
+| 컨테이너 실행 | ✅ | [docker-ps-a.txt](logs/docker-ps-a.txt) |
 | 포트 매핑 접속 | ✅ | [port-access.png](screenshots/port-access.png) |
 | 바인드 마운트 검증 | ✅ | [bind-before.png](screenshots/bind-before.png), [bind-after.png](screenshots/bind-after.png) |
 | Docker 볼륨 검증 | ✅ | [volume-proof.png](screenshots/volume-proof.png) |
