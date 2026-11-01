@@ -224,7 +224,7 @@ docker stats --no-stream
 
 ```bash
 docker rm -f dev-web
-docker run -d --name dev-web-bind -p 8081:80 -v "$PWD/app:/usr/share/nginx/html:ro" nginx:alpine
+docker run -d --name dev-workstation-bind -p 8081:80 -v "$PWD/app:/usr/share/nginx/html:ro" nginx:alpine
 ```
 
 ### 변경 전
@@ -403,7 +403,7 @@ docker ps -a
 
 ```bash
 docker rm -f dev-web
-docker run -d --name dev-web -p 8081:80 dev-workstation-web:1.0
+docker run -d --name dev-workstation -p 8081:80 dev-workstation-web:1.0
 ```
 
 대안:
